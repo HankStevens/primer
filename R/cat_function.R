@@ -1,0 +1,18 @@
+#' [title] A Cat Function
+#'
+#' [description] This function allows you to express your love of cats.
+#' @param love Do you love cats? Defaults to TRUE. [arguments]
+#' @keywords cats
+#' @export
+#' @examples
+#' cat_function()
+
+cat_function <- function(love=TRUE){
+  ## from Hilary Parker
+  if(love==TRUE){
+    print("I love cats!")
+  }
+  else {
+    print("I am not a cool person.")
+  }
+}

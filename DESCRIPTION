@@ -12,3 +12,4 @@ License: GPL
 LazyLoad: yes
 NeedsCompilation: no
 Packaged: 2019-09-04 20:59:46 UTC; hankstevens
+RoxygenNote: 7.1.1
