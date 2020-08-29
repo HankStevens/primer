@@ -15,4 +15,7 @@ cat_function(love = TRUE)
 \examples{
 cat_function()
 }
+\author{
+Hilary Parker
+}
 \keyword{cats}

@@ -4,6 +4,7 @@
 #' @param love Do you love cats? Defaults to TRUE. [arguments]
 #' @keywords cats
 #' @export
+#' @author Hilary Parker
 #' @examples
 #' cat_function()
 
