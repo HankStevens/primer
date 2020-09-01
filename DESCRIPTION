@@ -5,7 +5,10 @@ Version: 1.01.1
 Date: 2020-08-27
 Author: M Henry H Stevens
 Maintainer: Hank Stevens <hank.stevens@miamioh.edu>
-Depends: deSolve, ggplot2
+Depends: 
+    deSolve,
+    ggplot2,
+    R (>= 2.10)
 Suggests: bbmle, gdata, nlme, vegan
 Description: Functions are primarily functions for systems of ordinary differential equations, difference equations, and eigenanalysis and projection of demographic matrices; data are for examples.
 License: GPL

@@ -3,7 +3,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{  Demographic Resampling Function  }
 \description{
-   This resamples three specific data sets and calculates demographic statistics and bootstrapped confidence intervals. 
+   This resamples three specific data sets and calculates demographic statistics and bootstrapped confidence intervals.
 }
 \usage{
 DemoBoot(stagedat = NULL, fruitdat = NULL, seeddat = NULL, n = 1)
@@ -38,6 +38,7 @@ Berry, E.J., Gorchov, D.L., Endress, B.A. and Stevens, M.H.H. (2008) Source-sink
 		\code{\link{seeddat}}
   }
 \examples{
+library(primer)
 data(stagedat); data(fruitdat); data(seeddat)
 DemoBoot(stagedat = stagedat, fruitdat = fruitdat, seeddat = seeddat)
 }
