@@ -7,5 +7,3 @@
 #'   \item{logAs}{natural log of total leaf area in the first year}
 #'   \item{seeds}{number of seeds produced in the first year}
 #' }
-#' @source
-"coneflowerseeds"

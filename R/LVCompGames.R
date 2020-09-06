@@ -1,3 +1,36 @@
+#' Lotka-Volterra Competition Games
+#'
+#' A pedagogical tool for learning about isoclines and stable equilibria.
+#'
+#'
+#' @param Alpha a 2 x 2 matrix of coefficients; if NULL, then a sensible random
+#' matrix will be generated - fun for games.
+#' @param r1 the intrinsic rate of increase for species 1 (isocline -- a solid
+#' line).
+#' @param r2 the intrinsic rate of increase for species 2 (isocline -- a dashed
+#' line).
+#' @param num the desired number of random starting points for trajectories.
+#' @param time the number of time steps for each trajectory.
+#' @param step the number of time steps for which the integration is estimated
+#' (has no effect on accuracy, merely the smoothness of the line).
+#' @return First generates a plot of isoclines and initial points; the user is
+#' then prompted to "Hit <return>" in the console to see the trajectories.
+#' These will indicate the rate and path the trajectories, demonstrating, among
+#' other things, whether the equilibrium is stable.
+#' @author Hank Stevens <HStevens@@muohio.edu>
+#' @seealso \code{\link{lvcomp2}}, \code{\link{lvcompg}},
+#' \code{\link{clogistic}},
+#' @references Lotka, A.J. (1956) \emph{Elements of Mathematical Biology}.
+#' Dover Publications, Inc.
+#'
+#' Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series.
+#' Springer.
+#' @keywords methods
+#' @export
+#' @examples
+#'
+#' ## LVCompGames() # Hit return in the console to see the trajectories.
+#'
 LVCompGames <- function(Alpha=NULL, r1=.1, r2=.1, num=20, time=10, step=1){
 
 ### INPUT THE COMPETITION COEFFICIENTS a, and r
@@ -21,10 +54,10 @@ plot(x2, eval(n2iso), type='n', axes=FALSE,
 
 axis(1, c(0, 1/a[1,1], 1/a[2,1]),
           c(0, expression(1/alpha[11]), NA) )
-          
+
 axis(1, 1/a[2,1], expression(1/alpha[21]),
      line=1, tick=FALSE)
-         
+
 axis(2, c(0, 1/a[2,2], 1/a[1,2]),
           c(0, expression(1/alpha[22]), NA)
           )
@@ -35,7 +68,7 @@ box()
 # add isoclines
 
 lines(x2, eval(n2iso), lty=1)
-  
+
 n1iso <- expression(1/a[1,2] - (a[1,1]/a[1,2])*x1)
 x1 <- seq(0, 1/a[1,1], length=2)
 lines(x1, eval(n1iso), lty=2)

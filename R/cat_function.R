@@ -1,13 +1,12 @@
-#' [title] A Cat Function
+#' A Cat Function
 #'
-#' [description] This function allows you to express your love of cats.
-#' @param love Do you love cats? Defaults to TRUE. [arguments]
+#' This function allows you to express your love of cats.
+#' @param love Do you love cats? Defaults to TRUE.
 #' @keywords cats
 #' @export
 #' @author Hilary Parker
 #' @examples
 #' cat_function()
-
 cat_function <- function(love=TRUE){
   ## from Hilary Parker
   if(love==TRUE){

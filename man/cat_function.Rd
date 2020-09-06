@@ -2,15 +2,15 @@
 % Please edit documentation in R/cat_function.R
 \name{cat_function}
 \alias{cat_function}
-\title{[title] A Cat Function}
+\title{A Cat Function}
 \usage{
 cat_function(love = TRUE)
 }
 \arguments{
-\item{love}{Do you love cats? Defaults to TRUE. [arguments]}
+\item{love}{Do you love cats? Defaults to TRUE.}
 }
 \description{
-[description] This function allows you to express your love of cats.
+This function allows you to express your love of cats.
 }
 \examples{
 cat_function()

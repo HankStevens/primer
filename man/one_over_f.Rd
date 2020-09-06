@@ -7,7 +7,8 @@
 one_over_f(gamma = 1, N = 200)
 }
 \arguments{
-\item{gamma}{spectral power, numeric, where 0 generates a white noise time series, 2 generates reddened noise. Defaults to 1 (pink).}
+\item{gamma}{spectral power, numeric, where 0 generates a white noise time
+series, 2 generates reddened noise. Defaults to 1 (pink).}
 
 \item{N}{length of the time series.}
 }
@@ -15,22 +16,43 @@ one_over_f(gamma = 1, N = 200)
 Function to generate 1/f noise.
 }
 \examples{
+
 set.seed(1)
 time.series <- one_over_f(gamma=2, N=50)
 plot(1:50, time.series, type='l', main="Reddened noise")
 time.series <- one_over_f(gamma=0, N=50)
 plot(1:50, time.series, type='l', main="White noise")
 one_over_f()
+
 }
 \references{
 J. M. Halley. Ecology, evolution and 1/f-noise. Trends in Ecology & Evolution, 11:33-37, 1996.
 O. L. Petchey, A. Gonzalez, and H. B. Wilson. Effects on population persistence: the interaction between environmental noise colour, intra-specific competition and space. Proceedings of the Royal Society of London Series B, 264:1841-1847, 1997.
 J. E. Cohen, C. M. Newman, A. E. Cohen, O. L. Petchey, and A. Gonzalez. Spectral mimicry: a method of synthesizing matching time series with different Fourier spectra. Circuits, Systems and Signal Processing, 18:431-442, 1999.
+
+J. M. Halley. Ecology, evolution and 1/f-noise. Trends in
+Ecology & Evolution, 11:33-37, 1996. O. L. Petchey, A. Gonzalez, and H. B.
+Wilson. Effects on population persistence: the interaction between
+environmental noise colour, intra-specific competition and space.
+Proceedings of the Royal Society of London Series B, 264:1841-1847, 1997. J.
+E. Cohen, C. M. Newman, A. E. Cohen, O. L. Petchey, and A. Gonzalez.
+Spectral mimicry: a method of synthesizing matching time series with
+different Fourier spectra. Circuits, Systems and Signal Processing,
+18:431-442, 1999.
 }
 \seealso{
 [spec_mimic()] to rearrange one vector, X, to mimic the spectrum of another vector, Y; [plot_f()] to plot the time series and the spectrogram of the series.
+one_over_f
+
+Function to generate 1/f noise.
+
+[spec_mimic()] to rearrange one vector, X, to mimic the spectrum of
+another vector, Y; [plot_f()] to plot the time series and the spectrogram of
+the series.
 }
 \author{
+Hank Stevens
+
 Hank Stevens
 }
 \keyword{1/f,}
