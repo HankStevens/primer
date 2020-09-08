@@ -1,7 +1,7 @@
 Package: primer
 Type: Package
 Title: Functions and data for the book, A Primer of Ecology with R
-Version: 1.01.0906
+Version: 1.01.0908
 Date: 2020-08-27
 Author: M Henry H Stevens
 Maintainer: Hank Stevens <hank.stevens@miamioh.edu>
@@ -9,7 +9,12 @@ Depends:
     deSolve,
     ggplot2,
     R (>= 2.10)
-Suggests: bbmle, gdata, nlme, vegan
+Imports:
+    graphics,
+    stats,
+    utils
+Suggests: bbmle, gdata, nlme, vegan, diagram, DiagrammeR, DiagrammeRsvg, 
+    reshape2, data.table, magrittr, rsvg, igraph, phaseR, cowplot
 Description: Functions are primarily functions for systems of ordinary differential equations, difference equations, and eigenanalysis and projection of demographic matrices; data are for examples.
 License: GPL
 LazyLoad: yes

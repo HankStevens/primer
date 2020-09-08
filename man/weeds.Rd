@@ -32,7 +32,9 @@ Data are plot-level visual estimates of percent cover.
 
 data(weeds)
 str(weeds);
-#lattice::xyplot(Cover ~ Age, data=weeds, groups=Species, type=c("a"), auto.key=list(lines=TRUE, points=FALSE, columns=3), ylim=c(-1,20))
+# lattice::xyplot(Cover ~ Age, data=weeds, groups=Species,
+# type=c("a"), auto.key=list(lines=TRUE, points=FALSE, columns=3),
+# ylim=c(-1,20))
 
 }
 \references{

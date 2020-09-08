@@ -2,7 +2,7 @@
 % Please edit documentation in R/spec_mimic.R
 \name{spec_mimic}
 \alias{spec_mimic}
-\title{spec_mimic}
+\title{Function to mimic the power spectrum of an observed time series.}
 \usage{
 spec_mimic(X, Y = NULL, gamma = 1)
 }
@@ -14,7 +14,7 @@ spec_mimic(X, Y = NULL, gamma = 1)
 \item{gamma}{power of the 1/f noise; used only if Y is NULL.}
 }
 \description{
-Function to rearrange one vector, X, to mimic the spectrum of another
+This function rearranges one vector, X, to mimic the spectrum of another
 vector, Y.
 }
 \details{

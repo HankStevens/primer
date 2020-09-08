@@ -2,7 +2,7 @@
 % Please edit documentation in R/alogistic.R
 \name{alogistic}
 \alias{alogistic}
-\title{alogistic}
+\title{Logistic growth with the Allee effect}
 \usage{
 alogistic(t, y, p)
 }

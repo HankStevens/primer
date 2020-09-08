@@ -85,6 +85,6 @@ Springer.
 \code{\link{succniche}}
 }
 \author{
-Hank Stevens <HStevens@muohio.edu>
+Hank Stevens (HankStevens@miamioh.edu)
 }
 \keyword{methods}

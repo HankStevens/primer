@@ -7,11 +7,11 @@
 clogistic(times, y, parms)
 }
 \arguments{
-\item{times}{Times points that will return N}
+\item{times}{times points that will return N}
 
 \item{y}{N}
 
-\item{parms}{a vector of logistic growth parameters}
+\item{parms}{a vector of logistic growth parameters; the first must be r, and the second must be alpha (1/K).}
 }
 \value{
 Returns of list of one component (required by \code{ode}).
@@ -24,8 +24,10 @@ A function for continuous logistic growth, for use with \code{ode} in the
 The user does not put these directly into this function, but rather uses
 \code{ode} in the \code{deSolve} package.
 
-The function implements the logistic growth equation \deqn{\frac{dN}{dt} = rN\left(1-\alpha N\right)}
-or equivalently \deqn{\frac{dN}{dt} = rN\left(\frac{K-N}{K}\right)}
+The function implements the logistic growth equation
+\deqn{\frac{dN}{dt} = rN\left(1-\alpha N\right)}
+or equivalently
+\deqn{\frac{dN}{dt} = rN\left(\frac{K-N}{K}\right)}
 }
 \examples{
 
@@ -39,9 +41,6 @@ plot(time, out[,-1], type='l')
 
 }
 \references{
-Lotka, A.J. (1956) \emph{Elements of Mathematical Biology}.
-Dover Publications, Inc.
-
 Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series.
 Springer.
 }
@@ -50,6 +49,6 @@ Springer.
 \code{\link{levins}}, \code{\link{lvcomp2}}, \code{\link{lvcompg}}
 }
 \author{
-Hank Stevens <HStevens@muohio.edu>
+Hank Stevens <HankStevens@miamioh.edu>
 }
 \keyword{methods}

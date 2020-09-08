@@ -1,9 +1,9 @@
 #' plot_f
-#' 
+#'
 #' Function to plot a time series and its periodogram, and calculate the
 #' confidence interval of 2 times the spectral power.
-#' 
-#' 
+#'
+#'
 #' @param z numeric vector.
 #' @author Hank Stevens
 #' @seealso [one_over_f()] to generate 1/f noise; [spec_mimic()] to rearrange
@@ -20,13 +20,13 @@
 #' 18:431-442, 1999.
 #' @keywords 1/f, color mimicry, noise, periodogram spectra, spectral
 #' @examples
-#' 
-#' 
+#'
+#'
 #' ## white noise
 #' plot_f(z=runif(50))
-#' 
+#'
 #' plot_f
-#' 
+#'
 #' @export plot_f
 plot_f <- function(z){
 ## plotting function, which also estimates of the slope of
@@ -37,10 +37,10 @@ z1 <- z[1:(n/2)][-1]
 spz <- stats::spectrum(z1)
 lsa <- log(spz$spec)
 lf <- log(spz$freq)
-m <- lm(lsa~lf)
-par(mfrow=c(1,2))
+m <- stats::lm(lsa~lf)
+graphics::par(mfrow=c(1,2))
 plot(1:n, z, type='l')
 plot(lf, lsa)
-abline(m)
-confint(m)[2,]
+graphics::abline(m)
+stats::confint(m)[2,]
 }

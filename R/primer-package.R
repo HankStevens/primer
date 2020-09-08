@@ -97,62 +97,6 @@ NULL
 
 
 
-#' Smooth coneflower data
-#'
-#' A dataset containing size, survival, and flowering in smooth coneflower.
-#'
-#'
-#' @name coneflower
-#' @docType data
-#' @format A data frame with 136 rows and 5 variables: \describe{
-#' \item{logA}{natural log of total leaf area in the first year}
-#' \item{logAp}{natural log of total leaf area in the second year ('A prime')}
-#' \item{surv}{indicator of survival from year one to year 2 (0,1)}
-#' \item{flower_p}{indicator of flowering in year 2 (0,1)} }
-#' @source
-#' @keywords datasets
-NULL
-
-
-
-
-
-#' Smooth coneflower data
-#'
-#' A dataset containing recruit size and survival.
-#'
-#'
-#' @name coneflowerrecruits
-#' @docType data
-#' @format A data frame with 36 rows and 3 variables: \describe{
-#' \item{area17}{total leaf area in the first year} \item{surv18}{indicator of
-#' survival from year one to year 2 (0,1)} \item{area19}{total leaf area in the
-#' third year} }
-#' @source
-#' @keywords datasets
-NULL
-
-
-
-
-
-#' Smooth coneflower seed data
-#'
-#' A dataset containing size and seed set of individual coneflowers.
-#'
-#'
-#' @name coneflowerseeds
-#' @docType data
-#' @format A data frame with 136 rows and 5 variables: \describe{
-#' \item{logAs}{natural log of total leaf area in the first year}
-#' \item{seeds}{number of seeds produced in the first year} }
-#' @source
-#' @keywords datasets
-NULL
-
-
-
-
 #' Moth Species Richness
 #'
 #' Data set of moth species richness from Ohio and Indiana, USA.
@@ -310,7 +254,9 @@ NULL
 #'
 #' data(weeds)
 #' str(weeds);
-#' #lattice::xyplot(Cover ~ Age, data=weeds, groups=Species, type=c("a"), auto.key=list(lines=TRUE, points=FALSE, columns=3), ylim=c(-1,20))
+#' # lattice::xyplot(Cover ~ Age, data=weeds, groups=Species,
+#' # type=c("a"), auto.key=list(lines=TRUE, points=FALSE, columns=3),
+#' # ylim=c(-1,20))
 #'
 NULL
 

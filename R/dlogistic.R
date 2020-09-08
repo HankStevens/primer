@@ -21,11 +21,11 @@
 #'
 #' library(deSolve)
 #' # MUST use the 'euler' integration method with integer time steps
-#' p <- c(r=1, alpha=.01)
+#' p <- c(rd=1, alpha=.01)
 #' time <- 0:10
 #' initialN <- 10
 #' out <- ode(y=initialN, times=time,
-#'              func=clogistic, parms=p, method='euler')
+#'              func=dlogistic, parms=p, method='euler')
 #' plot(time, out[,-1], type='l')
 #'
 `dlogistic` <- function (t, y, p) {

@@ -26,6 +26,7 @@
 #' Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series.
 #' Springer.
 #' @keywords methods
+#' @import graphics stats deSolve ggplot2
 #' @export
 #' @examples
 #'
