@@ -1,19 +1,18 @@
 #' Discrete Logistic Growth
 #'
-#' Lotka-Volterra single species discrete population growth.
+#' Single species discrete logistic growth -- a difference equation.
+#' A function for continuous logistic growth, for use with \code{ode} in the
+#' \code{deSolve} package, using method = 'euler' and integer time steps.
 #'
-#' Of the form, \deqn{N_{t+1} = N_{t} + r_d N_{t}\left(1 - \alpha N_{t}\right)}
+#' Of the form,
+#' \deqn{N_{t+1} - N_{t} = r_d N_{t}\left(1 - \alpha N_{t}\right)}
 #'
-#' @param alpha per capita negative density dependence (a positive value will
-#' result in the usual negative effect)
-#' @param rd discrete growth increment
-#' @param N0 initial population size
-#' @param t end time point
-#' @return Returns a vector of population sizes from \eqn{N_0,\, \ldots,\,
-#' N_t}{N[0] to N[t]}, for integer time points.
-#' @author Hank Stevens (HStevens@@muohio.edu)
-#' @seealso \code{\link{clogistic}}, \code{\link{dlvcomp2}},
-#' \code{\link{lvcompg}}
+#' @param t times points that will return N
+#' @param y N
+#' @param p a vector of labeled logistic growth parameters; the first must be labeled rd, and the second must be labeled alpha (the value of alpha is 1/K).
+#' @return Returns of list of one component (required by \code{ode}).
+#' @author Hank Stevens (HankStevens@@miamioh.edu)
+#' @seealso \code{\link{clogistic}}, \code{\link{lvcompg}}
 #' @references Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R!
 #' Series. Springer.
 #' @keywords methods
@@ -29,12 +28,8 @@
 #'              func=clogistic, parms=p, method='euler')
 #' plot(time, out[,-1], type='l')
 #'
-`dlogistic` <-
-function (alpha = 0.01, rd = 1, N0 = 2, t = 15)
-{
-    N <- c(N0, numeric(t))
-    for (i in 1:t) N[i + 1] <- {
-        N[i] + rd * N[i] * (1 - alpha * N[i])
-    }
-    return(N)
-}
+`dlogistic` <- function (t, y, p) {
+        N <- y[1]
+        with( as.list(p),{
+            N.diff <-  rd * N * (1 - alpha * N)
+            return(list(N.diff))  }) }

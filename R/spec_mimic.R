@@ -1,6 +1,6 @@
-#' spec_mimic
+#' Function to mimic the power spectrum of an observed time series.
 #'
-#' Function to rearrange one vector, X, to mimic the spectrum of another
+#' This function rearranges one vector, X, to mimic the spectrum of another
 #' vector, Y.
 #'
 #' If Y is NULL, this function will use [one_over_f()] to generate a random

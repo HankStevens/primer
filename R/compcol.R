@@ -4,14 +4,13 @@
 #' after Hastings (1980).  For use with \code{ode} in the \code{deSolve}
 #' package.
 #'
-#'
 #' @param t Argument for time
 #' @param y A vector for population 1 and 2
 #' @param params Vector or list of parameters
 #' @return Returns a list of length one, for use with \code{ode} in the
 #' \code{deSolve} package.  \item{Component 1 }{vector of the state variables,
 #' y.}
-#' @author Hank Stevens <HStevens@@muohio.edu>
+#' @author Hank Stevens <HankStevens@@miamioh.edu>
 #' @seealso \code{\link{levins}}, \code{\link{compcolM}},
 #' \code{\link{succniche}}
 #' @references Hastings, A. (1980) Disturbance, coexistence, history, and

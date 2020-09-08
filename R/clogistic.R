@@ -6,19 +6,19 @@
 #' The user does not put these directly into this function, but rather uses
 #' \code{ode} in the \code{deSolve} package.
 #'
-#' The function implements the logistic growth equation \deqn{\frac{dN}{dt} = rN\left(1-\alpha N\right)}
-#' or equivalently \deqn{\frac{dN}{dt} = rN\left(\frac{K-N}{K}\right)}
+#' The function implements the logistic growth equation
+#' \deqn{\frac{dN}{dt} = rN\left(1-\alpha N\right)}
+#' or equivalently
+#' \deqn{\frac{dN}{dt} = rN\left(\frac{K-N}{K}\right)}
 #'
-#' @param times Times points that will return N
+#' @param times times points that will return N
 #' @param y N
-#' @param parms a vector of logistic growth parameters
+#' @param parms a vector of logistic growth parameters; the first must be r, and the second must be alpha (1/K).
 #' @return Returns of list of one component (required by \code{ode}).
-#' @author Hank Stevens <HStevens@@muohio.edu>
+#' @author Hank Stevens <HankStevens@@miamioh.edu>
 #' @seealso \code{\link{dlogistic}}, \code{\link{thetalogistic}},
 #' \code{\link{levins}}, \code{\link{lvcomp2}}, \code{\link{lvcompg}}
-#' @references Lotka, A.J. (1956) \emph{Elements of Mathematical Biology}.
-#' Dover Publications, Inc.
-#'
+#' @references
 #' Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series.
 #' Springer.
 #' @keywords methods

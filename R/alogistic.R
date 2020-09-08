@@ -1,6 +1,6 @@
-#' alogistic
+#' Logistic growth with the Allee effect
 #'
-#'  A function for continuous logistic growth with the Allee effect, for use with \code{ode} in the \code{deSolve} package.
+#' A function for continuous logistic growth with the Allee effect, for use with \code{ode} in the \code{deSolve} package.
 #' @usage alogistic(t, y, p)
 #' @param t Time points for which N wll be returned.
 #' @param y N, population size

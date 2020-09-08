@@ -1,6 +1,6 @@
-#' one_over_f
-#'
 #' Function to generate 1/f noise.
+#'
+#' Generates 1/f noise with a specified power or amplitude.
 #' @param gamma spectral power, numeric, where 0 generates a white noise time series, 2 generates reddened noise. Defaults to 1 (pink).
 #' @param N length of the time series.
 #' @keywords noise, 1/f, color spectra
@@ -16,10 +16,10 @@
 
 
 #' one_over_f
-#' 
+#'
 #' Function to generate 1/f noise.
-#' 
-#' 
+#'
+#'
 #' @param gamma spectral power, numeric, where 0 generates a white noise time
 #' series, 2 generates reddened noise. Defaults to 1 (pink).
 #' @param N length of the time series.
@@ -38,14 +38,14 @@
 #' 18:431-442, 1999.
 #' @keywords 1/f, color noise, spectra
 #' @examples
-#' 
+#'
 #' set.seed(1)
 #' time.series <- one_over_f(gamma=2, N=50)
 #' plot(1:50, time.series, type='l', main="Reddened noise")
 #' time.series <- one_over_f(gamma=0, N=50)
 #' plot(1:50, time.series, type='l', main="White noise")
 #' one_over_f()
-#' 
+#'
 #' @export one_over_f
 one_over_f <- function(gamma=1, N=200){
   ## Generate 1/f noise with power = gamma

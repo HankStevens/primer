@@ -29,7 +29,7 @@
 #' @return Returns a list of length one, for use with \code{ode} in the
 #' \code{deSolve} package.  \item{Component 1 }{vector of the state variables,
 #' y.}
-#' @author Hank Stevens <HStevens@@muohio.edu>
+#' @author Hank Stevens (HankStevens@@miamioh.edu)
 #' @seealso \code{\link{succniche}}
 #' @references
 #'
@@ -55,10 +55,7 @@
 #'
 #'
 'chesson' <-
-  function(alpha=c(1.1*1e-5, 1e-5), d=.1, years=10, N0=c(1e3,1e5),
-                    w=c(.6, 1), env.var=1,
-                    specialization=1, spread=0.67, type=1)
-{
+  function(alpha=c(1.1*1e-5, 1e-5), d=.1, years=10, N0=c(1e3,1e5), w=c(.6, 1), env.var=1, specialization=1, spread=0.67, type=1) {
   if(spread>1 | spread<0) {
     stop("'spread' must be between zero and 1.")
   }
