@@ -1,6 +1,6 @@
 #' The S-I-R Epidemilogical Disease Model
 #'
-#' The S-I-R epidemilogical disease model, for use with \code{ode} in the
+#' The S-I-R epidemilogical disease model with density-dependent transmission, for use with \code{ode} in the
 #' \code{deSolve} package.
 #'
 #' The user does not put these directly into this function, but rather uses
@@ -10,7 +10,7 @@
 #' @param y the vector of disease states of hosts (S, I, R)
 #' @param p a vector of parameters
 #' @return Returns of list of one component (required by \code{ode}).
-#' @author Hank Stevens <HStevens@@muohio.edu>
+#' @author Hank Stevens <Hank.Stevens@@miamioh.edu>
 #' @seealso \code{\link{ross}}, \code{\link{SIRf}}, \code{\link{SIRbd}}
 #' @references Ellner, S.P. and Guckenheimer, J. (2006) \emph{Dynamic Models in
 #' Biology}, Princeton University Press.
@@ -29,11 +29,11 @@
 #' parms <- c(B=.01, g=4)
 #' months <- seq(0, 3, by=0.01)
 #' require(deSolve)
-#' SIR.out <- data.frame( ode(c(S,I,R), months, SIR, parms) )
+#' SIR.out <- data.frame( ode(c(S,I,R), months, SIRd, parms) )
 #' matplot(months, SIR.out[,-1], type='l')
 #' legend('right', c('R', 'I', 'S'), lty=3:1, col=3:1, bty='n')
 #'
-`SIR` <-
+`SIRd` <-
 function (t, y, p)
 {
     {

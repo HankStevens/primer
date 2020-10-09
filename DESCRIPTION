@@ -1,8 +1,8 @@
 Package: primer
 Type: Package
 Title: Functions and data for the book, A Primer of Ecology with R
-Version: 1.01.0908
-Date: 2020-08-27
+Version: 1.01.1009
+Date: 2020-09-10
 Author: M Henry H Stevens
 Maintainer: Hank Stevens <hank.stevens@miamioh.edu>
 Depends: 

@@ -46,7 +46,7 @@ Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}, Use R! Series.
 Springer.
 }
 \seealso{
-\code{\link{ross}}, \code{\link{SIR}}, \code{\link{SIRbd}},
+\code{\link{ross}}, \code{\link{SIRd}}, \code{\link{SIRbd}},
 \code{\link[deSolve]{ode}}
 }
 \author{

@@ -1,2 +1,2 @@
 # primer
-primer R package for "A Primer of Ecology with R"
+primer R package for "A Primer of Ecology using R"

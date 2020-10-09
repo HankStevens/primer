@@ -11,7 +11,7 @@
 #' @param p a vector of parameters
 #' @return Returns of list of one component (required by \code{ode}).
 #' @author Hank Stevens <HStevens@@muohio.edu>
-#' @seealso \code{\link{ross}}, \code{\link{SIR}}, \code{\link{SIRbd}},
+#' @seealso \code{\link{ross}}, \code{\link{SIRd}}, \code{\link{SIRbd}},
 #' \code{\link[deSolve]{ode}}
 #' @references Ellner, S.P. and Guckenheimer, J. (2006) \emph{Dynamic Models in
 #' Biology}, Princeton University Press.

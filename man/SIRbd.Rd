@@ -52,7 +52,7 @@ Stevens, M.H.H. (2009) \emph{A Primer of Ecology with R}, Use R! Series.
 Springer.
 }
 \seealso{
-\code{\link{ross}}, \code{\link{SIRf}}, \code{\link{SIR}}
+\code{\link{ross}}, \code{\link{SIRf}}, \code{\link{SIRd}}
 }
 \author{
 Hank Stevens <HStevens@muohio.edu>
