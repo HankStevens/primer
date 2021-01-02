@@ -5,7 +5,7 @@
 #' @param t Time points for which N wll be returned.
 #' @param y N, population size
 #' @param p a vector of logistic growth (r, alpha) and Allee effect parameters (a, tau); a is the threshold population size.
-#' @keywords logistic, Allee effect
+#' @keywords logistic Allee effect
 #' @details
 #' The user does not put these directly into this function, but rather uses code{ode} in the \code{deSolve} package.
 #' The function is based on the logistic growth equation

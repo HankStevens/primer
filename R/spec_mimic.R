@@ -21,7 +21,7 @@
 #' Spectral mimicry: a method of synthesizing matching time series with
 #' different Fourier spectra. Circuits, Systems and Signal Processing,
 #' 18:431-442, 1999.
-#' @keywords 1/f, color mimicry noise, spectra, spectral
+#' @keywords 1/f color mimicry noise spectra
 #' @export
 #' @examples
 #' N = 50

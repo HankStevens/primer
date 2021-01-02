@@ -12,7 +12,7 @@
 #' J. E. Cohen, C. M. Newman, A. E. Cohen, O. L. Petchey, and A. Gonzalez. Spectral mimicry: a method of synthesizing matching time series with different Fourier spectra. Circuits, Systems and Signal Processing, 18:431-442, 1999.
 #' @seealso
 #' [spec_mimic()] to rearrange one vector, X, to mimic the spectrum of another vector, Y; [plot_f()] to plot the time series and the spectrogram of the series.
-#' @keywords 1/f, color noise, spectra
+#' @keywords 1/f color noise spectra
 #' @examples
 #'
 #' set.seed(1)

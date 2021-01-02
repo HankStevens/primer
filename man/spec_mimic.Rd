@@ -50,9 +50,8 @@ series and the spectrogram of the series.
 \author{
 Hank Stevens
 }
-\keyword{1/f,}
+\keyword{1/f}
 \keyword{color}
 \keyword{mimicry}
-\keyword{noise,}
-\keyword{spectra,}
-\keyword{spectral}
+\keyword{noise}
+\keyword{spectra}

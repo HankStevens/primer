@@ -41,10 +41,8 @@ hard work.
 \author{
 Hank Stevens
 }
-\keyword{1/f,}
-\keyword{color}
-\keyword{mimicry,}
-\keyword{noise,}
+\keyword{1/f}
+\keyword{color-mimicry}
+\keyword{noise}
 \keyword{periodogram}
-\keyword{spectra,}
-\keyword{spectral}
+\keyword{spectra}

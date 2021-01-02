@@ -43,4 +43,4 @@ Hank Stevens
 }
 \keyword{Allee}
 \keyword{effect}
-\keyword{logistic,}
+\keyword{logistic}
