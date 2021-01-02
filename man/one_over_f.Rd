@@ -36,8 +36,6 @@ J. E. Cohen, C. M. Newman, A. E. Cohen, O. L. Petchey, and A. Gonzalez. Spectral
 Hank Stevens
 }
 \keyword{1/f}
-\keyword{1/f,}
 \keyword{color}
 \keyword{noise}
-\keyword{noise,}
 \keyword{spectra}

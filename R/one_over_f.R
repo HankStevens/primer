@@ -3,7 +3,7 @@
 #' Generates 1/f noise with a specified power or amplitude.
 #' @param gamma spectral power, numeric, where 0 generates a white noise time series, 2 generates reddened noise. Defaults to 1 (pink).
 #' @param N length of the time series.
-#' @keywords noise, 1/f, color spectra
+#' @keywords noise 1/f color spectra
 #' @export
 #' @author Hank Stevens
 #' @references
