@@ -44,8 +44,8 @@ The diagonal represents intraspecific density dependence; it is filled with the 
 }
 \examples{
 
-b <- bip_stability(Spp.a = 16:60, Spp.p = 8:30, C=c(.05, 0.5), reps=10, quant=FALSE)
-pairs(b)
+# b <- bip_stability(Spp.a = 16:60, Spp.p = 8:30, C=c(.05, 0.5), reps=10, quant=FALSE)
+# pairs(b)
 
 }
 \references{

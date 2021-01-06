@@ -30,8 +30,8 @@
 #' @export
 #' @examples
 #'
-#' b <- bip_stability(Spp.a = 16:60, Spp.p = 8:30, C=c(.05, 0.5), reps=10, quant=FALSE)
-#' pairs(b)
+#' # b <- bip_stability(Spp.a = 16:60, Spp.p = 8:30, C=c(.05, 0.5), reps=10, quant=FALSE)
+#' # pairs(b)
 #'
 `bip_stability` <- function( Spp.a = 10:50, Spp.p = 5:25, C=c(.05,.3), IS=NULL, quant=FALSE, ndd=1, reps=10){
 
