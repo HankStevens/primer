@@ -19,8 +19,7 @@
 #' @seealso \code{\link{dlogistic}}, \code{\link{thetalogistic}},
 #' \code{\link{levins}}, \code{\link{lvcomp2}}, \code{\link{lvcompg}}
 #' @references
-#' Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series.
-#' Springer.
+#' Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
 #' @keywords methods
 #' @export
 #' @examples

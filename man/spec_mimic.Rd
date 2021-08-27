@@ -34,18 +34,21 @@ legend("bottomright", legend=colnames(series), col=1:3, lty=1:3)
 }
 \references{
 J. M. Halley. Ecology, evolution and 1/f-noise. Trends in
-Ecology & Evolution, 11:33-37, 1996. O. L. Petchey, A. Gonzalez, and H. B.
+Ecology & Evolution, 11:33-37, 1996.
+
+O. L. Petchey, A. Gonzalez, and H. B.
 Wilson. Effects on population persistence: the interaction between
 environmental noise colour, intra-specific competition and space.
-Proceedings of the Royal Society of London Series B, 264:1841-1847, 1997. J.
-E. Cohen, C. M. Newman, A. E. Cohen, O. L. Petchey, and A. Gonzalez.
+Proceedings of the Royal Society of London Series B, 264:1841-1847, 1997.
+
+J. E. Cohen, C. M. Newman, A. E. Cohen, O. L. Petchey, and A. Gonzalez.
 Spectral mimicry: a method of synthesizing matching time series with
 different Fourier spectra. Circuits, Systems and Signal Processing,
 18:431-442, 1999.
 }
 \seealso{
-[one_over_f()] to generate 1/f noise; [plot_f()] to plot the time
-series and the spectrogram of the series.
+\code{\link{one_over_f}} to generate 1/f noise; \code{\link{plot_f}} to plot the time
+series and the spectrogram of the series, and estimate the slope.
 }
 \author{
 Hank Stevens

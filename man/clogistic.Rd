@@ -41,8 +41,7 @@ plot(time, out[,-1], type='l')
 
 }
 \references{
-Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series.
-Springer.
+Stevens. M.H.H. (2009) \emph{A Primer of Ecology with R}. Use R! Series. Springer.
 }
 \seealso{
 \code{\link{dlogistic}}, \code{\link{thetalogistic}},
