@@ -39,7 +39,7 @@ n <- length(z)
 ## But I can't remember why
 ## I switched it to:
 z1 <- z
-spz <- stats::spectrum(z1)
+spz <- stats::spectrum(z1, plot=FALSE)
 lsa <- log(spz$spec)
 lf <- log(spz$freq)
 m <- stats::lm(lsa~lf)
