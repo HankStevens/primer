@@ -3,3 +3,5 @@
 ^README\.Rmd$
 ^CRAN-RELEASE$
 ^cran-comments\.md$
+^\.positai$
+^\.claude$

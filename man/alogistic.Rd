@@ -17,7 +17,7 @@ alogistic(t, y, p)
 A function for continuous logistic growth with the Allee effect, for use with \code{ode} in the \code{deSolve} package.
 }
 \details{
-The user does not put these directly into this function, but rather uses code{ode} in the \code{deSolve} package.
+The user does not put these directly into this function, but rather uses \code{ode} in the \code{deSolve} package.
 The function is based on the logistic growth equation
 \deqn{\frac{dN}{dt} = rN\left(1-\alpha N\right)\left(1 - \frac{a+\tau}{N+\tau}\right)}
 with \eqn{a} being the threshold population size.
