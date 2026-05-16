@@ -5,3 +5,7 @@
 ^cran-comments\.md$
 ^\.positai$
 ^\.claude$
+^\.git$
+^\.github$
+^\.gitignore$
+^CRAN-SUBMISSION$
