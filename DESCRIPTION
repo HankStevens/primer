@@ -5,6 +5,10 @@ Version: 1.2.1
 Date: 2026-05-14
 Author: M H H Stevens
 Maintainer: Hank Stevens <hank.stevens@miamioh.edu>
+Authors@R: person(given = "M. Henry",
+                  family = "Stevens",
+                  role = c("aut", "cre"),
+                  email = "hank.stevens@miamioh.edu")
 Depends:
     deSolve,
     ggplot2,
