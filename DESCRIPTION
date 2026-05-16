@@ -12,7 +12,7 @@ Depends:
 Imports:
     graphics,
     stats
-Suggests: bbmle, bipartite, cowplot, data.table, diagram, DiagrammeR, DiagrammeRsvg, igraph, lavaan, magrittr, nlme, phaseR, vegan, 
+Suggests: bbmle, bipartite, cowplot, data.table, diagram, DiagrammeR, DiagrammeRsvg, igraph, lavaan, magrittr, nlme, vegan, 
     reshape2, rARPACK, rsvg
 Description: Functions are primarily functions for systems of ordinary differential equations, difference equations, and eigenanalysis and projection of demographic matrices; data are for examples.
 License: GPL-3
